@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metaetiquetas y configuración básica -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Page</title>
+    <!-- Enlace al archivo CSS de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar (Barra de navegación) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <!-- Título de la barra de navegación -->
+            <a class="navbar-brand" href="#">Bootstrap</a>
+            <!-- Botón de menú para pantallas pequeñas -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Elementos de la barra de navegación -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav me-auto">
+                    <!-- Elementos individuales de la navegación -->
+                    <div class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </div>
+                    <div class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </div>
+                    <!-- Menú desplegable -->
+                    <div class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <div><a class="dropdown-item" href="#">Action</a></div>
+                            <div><a class="dropdown-item" href="#">Another action</a></div>
+                        </div>
+                    </div>
+                    <!-- Enlace deshabilitado -->
+                    <div class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </div>
+                </div>
+                <!-- Texto en la barra de navegación -->
+                <span class="navbar-text">
+                    +5555 555555
+                </span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carousel (Carrusel de imágenes) -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <!-- Indicadores del carrusel -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <!-- Imágenes del carrusel -->
+        <div class="carousel-inner">
+            <!-- Primera imagen del carrusel -->
+            <div class="carousel-item active">
+                <img src="https://lh3.googleusercontent.com/drive-storage/AJQWtBMc-AFtQ7rRMByzOLTqe6BLVe9Iy4wSn6GOBGK2PvGN88iQhyqgETslskrz8iRlRrryTDkkUE5yrJH2z3mrJBp_NA4SPYEqwoGz9xSHvQAMtPI=w1920-h927" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Título Uno</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Voluptatibus deserunt, cumque aliquam nostrum ullam dolorum possimus provident.</p>
+                </div>
+            </div>
+            <!-- Segunda imagen del carrusel -->
+            <div class="carousel-item">
+                <img src="https://lh3.googleusercontent.com/drive-storage/AJQWtBM9sY2hi3ZWV4j7YqBmPWc1B6UuMVg7jJB3cEl61nYjN45D8Qs3pLnEoAaUrHrm_78eP1CgUBqkrVqaKKQkzJbsZ8yl9OB1wGvoBJlxmAzv3oQ=w1920-h927" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Título Dos</h5>
+                  <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Voluptatibus deserunt, cumque aliquam nostrum ullam dolorum possimus provident.</p>
+              </div>
+            </div>
+            <!-- Tercera imagen del carrusel -->
+            <div class="carousel-item">
+                <img src="https://lh3.googleusercontent.com/drive-storage/AJQWtBOx0ThOhTa68nm_-MvJ1IF8WxcbruDJKzamCi1I_mgQYbHqt1Dfa3wyAfnIHdAOeAWgeTVHb-ICf4bl3nwDOSQcgCAY0K9RRwvAdDs023hu37c=w1920-h927" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Título Tres</h5>
+                  <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Voluptatibus deserunt, cumque aliquam nostrum ullam dolorum possimus provident.</p>
+              </div>
+            </div>
+        </div>
+        <!-- Controles de navegación del carrusel -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Content Section (Sección de contenido principal) -->
+    <div class="container my-5">
+        <div class="text-center">
+            <!-- Título principal de la sección -->
+            <h1>Lorem, ipsum dolor.</h1>
+            <!-- Texto descriptivo debajo del título -->
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium, quia consequatur, incidunt, odio nisi recusandae dolore voluptatibus neque a soluta quasi molestias? Nemo, optio. Ipsa ipsum explicabo debitis dicta corporis?</p>
+        </div>
+
+        <!-- Cards (Tarjetas de contenido) -->
+        <div class="row">
+            <!-- Primera tarjeta -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <a href="#" class="btn btn-primary">Más información</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Segunda tarjeta -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <a href="#" class="btn btn-primary">Más información</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Tercera tarjeta -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <a href="#" class="btn btn-primary">Más información</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Nueva sección añadida -->
+    <div class="container my-5">
+      <!-- Jumbotron -->
+      <div class="p-5 mb-4 bg-light rounded-3">
+          <div class="container-fluid py-5">
+              <h1 class="display-5 fw-bold">Hello, world!</h1>
+              <p class="col-md-8 fs-4">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+              <button class="btn btn-primary btn-lg" type="button">Learn more</button>
+          </div>
+      </div>
+
+      <!-- Texto centrado -->
+      <div class="text-center">
+          <h1>Lorem, ipsum dolor.</h1>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium, quia consequatur, incidunt, odio nisi recusandae dolore voluptatibus neque a soluta quasi molestias? Nemo, optio. Ipsa ipsum explicabo debitis dicta corporis?</p>
+      </div>
+
+      <div class="row">
+          <!-- Grupo de acordeón -->
+          <div class="col-md-8">
+              <div class="accordion" id="accordionExample">
+                  <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              Collapsible Group Item #1
+                          </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions.
+                          </div>
+                      </div>
+                  </div>
+                  <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              Collapsible Group Item #2
+                          </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                              <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions.
+                          </div>
+                      </div>
+                  </div>
+                  <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              Collapsible Group Item #3
+                          </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                              <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions.
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+           <!-- Lista de enlaces con imagen -->
+           <div class="col-md-4">
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+                    <!-- Imagen y texto en la lista -->
+                    <img src="https://lh3.googleusercontent.com/drive-storage/AJQWtBMc-AFtQ7rRMByzOLTqe6BLVe9Iy4wSn6GOBGK2PvGN88iQhyqgETslskrz8iRlRrryTDkkUE5yrJH2z3mrJBp_NA4SPYEqwoGz9xSHvQAMtPI=w1920-h927" class="img-fluid mb-2" alt="Imagen en la lista">
+                    Cras justo odio
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+                <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
+                <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
+                <a href="#" class="list-group-item list-group-item-action">Vestibulum at eros</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+  <!-- Pie de página (Footer) -->
+  <footer class="bg-dark text-white text-center py-3">
+      <p>© 2024 Company, Inc.</p>
+  </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
